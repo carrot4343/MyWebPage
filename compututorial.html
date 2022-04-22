@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+    <meta charset = "utf-8"/>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css">
+        <title>
+            컴퓨터 견적 튜토리얼
+        </title>
+        <style type = "text/css">
+        @font-face
+        {
+            font-family:"jua";
+            src: url("./fonts/BMJUA_ttf.ttf");
+        }
+
+        @font-face
+        {
+            font-family:"jalnan";
+            src: url("./fonts/Jalnan.ttf");
+        }
+        .maintitle
+        {
+            font-family: "jua";
+            font-size: 80px;
+        }
+        .mailtitle-sub
+        {
+            font-size: 30px;
+            text-align: center;
+        }
+        p
+        {
+            font-family:"jalnan";
+            font-size: 23px;
+        }
+        .stickynav
+        {
+            font-family:"jalnan";
+            font-size: 20px;
+        }
+        </style>
+        <style>
+            section
+            {
+                background-color: white; 
+                position: absolute; left: 650px; width: 1242px; height: 1200px; 
+                border-style: solid; border-width: thin; box-shadow: 10px 10px 5px gray; padding: 20px;
+                z-index: 1; overflow-y: scroll; top: 0;
+            } 
+            aside
+            {
+                background-color: lightgray; 
+                position: absolute; width: 650px; height: 1200px; left:0; top:0;
+                z-index: 0;
+            }
+            nav
+            {
+                background-color: lightgray; 
+                position: absolute; left: 1892px; width: 668px; height: 1200px; top: 0;
+                z-index: 0;
+            }
+            footer
+            {
+                background-color: lightgray; 
+                position: absolute; top: 1200px; width: 2560px; height: 97px; left: 0;padding: 15px;
+                z-index: 0;
+                text-align: center;
+            }
+            .maintitle
+            {
+                height: 400px; padding: 100px;
+            }
+            .detail
+            {
+                width: 25%; height: 300px; float: left;  margin: 3.9%;
+                text-align: center; 
+                border-style: solid; border-width: medium; border-radius: 50px;
+            }
+            .detail:hover
+            {
+                transform: scale(1.15,1.15);
+                transition-timing-function: ease-out;
+            }
+            .detail-image
+            {
+               margin-top: 20px; margin-bottom: 20px;
+            }
+            .stickynav
+            {
+                text-align: center;
+            }
+            .stickynav-head
+            {
+                z-index: 1; position: absolute; width: 150px; height: 60px;
+                top: 260px; left: 100px;
+                padding: 15px;
+            }
+            .stickynav-body
+            {
+                z-index: 1; position: absolute; width: 150px; height: 554px; background-color: white; 
+                border-style: solid; border-width: medium; border-radius: 10px;
+                top: 320px; left: 100px;
+            }
+            .stickynav-body-detail
+            {
+                width: 116px; height: 40px; margin: 15px;
+                border-bottom: solid; border-width: 1px;
+            }
+            .stickynav-body-detail:hover
+            {
+                font-size: 23px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class = "maintitle">
+                컴퓨터 견적 튜토리얼
+                <div class ="mailtitle-sub">
+                    초보자를 위한 컴퓨터 견적 Tip.
+                </div>
+            </div>
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptCPU.html';"><img src = "cptCPU.png" alt = "CPU 설명으로 이동" class = "detail-image" width = 200px height = 200px><p>CPU</p></div>
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptVGA.html';"><img src = "cptVGA.jpg" alt = "그래픽카드 설명으로 이동" class = "detail-image" width = 200px height = 200px><p>그래픽카드</p></div>    
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptRAM.html';"><img src = "cptRAM.png" alt = "RAM 설명으로 이동" class = "detail-image" width = 200px height = 200px><p>RAM (램)</p></div>
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptMBD.html';"><img src = "cptMBD.jpg" alt = "메인보드 설명으로 이동" class = "detail-image" width = 200px height = 200px><p>메인보드</p></div>
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptPSU.html';"><img src = "cptPSU.png" alt = "PSU 설명으로 이동" class = "detail-image" width = 200px height = 200px><P>파워 서플라이</P></div>
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptSTR.html';"><img src = "cptSTR.png" alt = "저장장치 설명으로 이동" class = "detail-image" width = 200px height = 200px><p>저장장치</p></div>
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptCLC.html';"><img src = "cptCLC.jpg" alt = "CPU쿨러 설명으로 이동" class = "detail-image" width = 200px height = 200px><p>CPU 쿨러</p></div>
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptCAS.html';"><img src = "cptCAS.png" alt = "케이스 설명으로 이동" class = "detail-image" width = 200px height = 200px><p>케이스</p></div>
+            <div class = "detail" style=" cursor: pointer;" onclick="location.href= 'cptREC.html';"><img src = "cptREC.png" alt = "추천 견적으로 이동" class = "detail-image" width = 200px height = 200px><p>추천 견적</p></div>
+        </section>
+        <aside>
+        </aside>
+        <nav>
+            <div class = "stickynav">
+                <div class = "stickynav-head">
+                    퀵 메뉴
+                </div>
+                <div class = "stickynav-body">
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCPU.html';">CPU</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptVGA.html';">그래픽카드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptRAM.html';">RAM (램)</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptMBD.html';">메인보드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptPSU.html';">파워</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptSTR.html';">저장장치</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCLC.html';">CPU 쿨러</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCAS.html';">케이스</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptREC.html';">추천견적</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'compututorial.html';">메인화면</div>
+                </div>
+            </div>
+        </nav> 
+        
+        <footer>
+        </br><small>홍익대학교 게임소프트웨어학과 B877014 박형근 제작</small>
+        </footer>
+        <script type = "text/jacascript" src = "bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+    </body>
+</html>

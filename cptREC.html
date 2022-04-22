@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8"/>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css">
+        <title>
+            컴퓨터 추천 견적
+        </title>
+        <style type = "text/css">
+            @font-face
+            {
+                font-family:"jua";
+                src: url("./fonts/BMJUA_ttf.ttf");
+            }
+    
+            @font-face
+            {
+                font-family:"jalnan";
+                src: url("./fonts/Jalnan.ttf");
+            }
+            p
+            {
+                font-family:"jalnan";
+                font-size: 23px;
+            }
+            .stickynav
+            {
+                font-family:"jalnan";
+                font-size: 20px;
+            }
+        </style>
+        <style>
+            section
+            {
+                background-color: white; 
+                position: absolute; left: 650px; width: 1242px; height: 1200px; 
+                border-style: solid; border-width: thin; box-shadow: 10px 10px 5px gray; padding: 20px;
+                z-index: 1; overflow-y: scroll; top: 0;
+            } 
+            aside
+            {
+                background-color: lightgray; 
+                position: absolute; width: 650px; height: 1200px; left:0; top:0;
+                z-index: 0;
+            }
+            nav
+            {
+                background-color: lightgray; 
+                position: absolute; left: 1892px; width: 668px; height: 1200px; top: 0;
+                z-index: 0;
+            }
+            footer
+            {
+                background-color: lightgray; 
+                position: absolute; top: 1200px; width: 2560px; height: 97px; left: 0; padding: 15px;
+                z-index: 0;
+                text-align: center;
+            }
+            .detail
+            {
+                width: 25%; height: 300px; float: left;  margin: 3.9%;
+               text-align: center; 
+                border-style: solid; border-width: medium; border-radius: 50px;
+            }
+            .detail-image
+            {
+               margin-top: 20px; margin-bottom: 20px;
+            }
+            article
+            {
+                clear: both;
+                margin-left: 50px; margin-right: 50px;
+            }
+            .survey
+            {
+                clear: both;
+                margin: 50px;
+            }
+            .stickynav
+            {
+                text-align: center;
+            }
+            .stickynav-head
+            {
+                z-index: 1; position: absolute; width: 150px; height: 60px;
+                top: 260px; left: 100px;
+                padding: 15px;
+            }
+            .stickynav-body
+            {
+                z-index: 1; position: absolute; width: 150px; height: 554px; background-color: white; 
+                border-style: solid; border-width: medium; border-radius: 10px;
+                top: 320px; left: 100px;
+            }
+            .stickynav-body-detail
+            {
+                width: 116px; height: 40px; margin: 15px;
+                border-bottom: solid; border-width: 1px;
+            }
+            .stickynav-body-detail:hover
+            {
+                font-size: 23px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="detail"><img src = "cptREC.png" alt = "견적 추천" widtd = 200px height = 200px></br><p>추천 견적</p></div>
+            <article>
+                이 페이지는 당신의 목적에 맞게 각 부품들의 제품군을 소개해주는 페이지입니다.</br>
+                각 설문 문항에 대답해주시길 바랍니다.</br>
+            </article>
+            <div class = "survey">
+                <form action = "script.jsp" method = "post">
+                    <fieldset>
+                        <table border = "0" style = "width:100%">
+                            <tr>
+                                <th>질문<p></p></th><th>예</th><th>아니오</th>
+                            </tr>
+                            <tr>
+                                <td>단순 문서작업 및 인터넷 혹은 학부생 수준의 코딩 전용 컴퓨터를 구매하길 희망하나요?<p></p></td>
+                                <td><input type = "radio" name = "q1" value = "q1y"></td>
+                                <td><input type = "radio" name = "q1" value = "q1n" checked></td>
+                            </tr>
+                            <tr>
+                                <td>저사양 게임(리그 오브 레전드, 스타크래프트 등)을 즐길 수 있을 수준의 컴퓨터를 구매하길 원하나요?<p></p></td>
+                                <td><input type = "radio" name = "q2" value = "q2y"></td>
+                                <td><input type = "radio" name = "q2" value = "q2n" checked></td>
+                            </tr>
+                            <tr>
+                                <td>고사양 게임(배틀필드 V, 사이버펑크2077 등)을 즐길 수 있을 수준의 컴퓨터를 구매하길 원하나요?<p></p></td>
+                                <td><input type = "radio" name = "q3" value = "q3y"></td>
+                                <td><input type = "radio" name = "q3" value = "q3n" checked></td>
+                            </tr>
+                            <tr>
+                                <td>CPU의 멀티코어를 많이 사용하는 프로그램(원컴방송, 일부 고사양 게임)을 사용하실 예정인가요?<p></p></td>
+                                <td><input type = "radio" name = "q4" value = "q4y"></td>
+                                <td><input type = "radio" name = "q4" value = "q4n" checked></td>
+                            </tr>
+                            <tr>
+                                <td>고성능 CPU를 요구하는 프로그램(전문가 수준의 포토샵)을 사용하실 예정인가요?</br>주의사항 : 본인이 사용할 프로그램의 권장 사양을 반드시 확인하길 바랍니다.<p></p></td>
+                                <td><input type = "radio" name = "q5" value = "q5y"></td>
+                                <td><input type = "radio" name = "q5" value = "q5n" checked></td>
+                            </tr>
+                            <tr>
+                                <td>고성능 그래픽카드를 요구하는 프로그램(전문가 수준의 3D 렌더링 등)을 사용하실 예정인가요?</br>주의사항 : 본인이 사용할 프로그램의 권장 사양을 반드시 확인하길 바랍니다.<p></p></td>
+                                <td><input type = "radio" name = "q6" value = "q6y"></td>
+                                <td><input type = "radio" name = "q6" value = "q6n" checked></td>
+                            </tr>
+                            <tr>
+                                <td>넓은 용량의 램을 요구하는 프로그램(고용량 사진 및 영상 미디어 작업등을 동시에 수행하는 경우, 시티즈 스카이라인 등)</br>을 사용하실 예정인가요?</br>주의사항 : 본인이 사용할 프로그램의 권장 사양을 반드시 확인하길 바랍니다.<p></p></td>
+                                <td><input type = "radio" name = "q7" value = "q7y"></td>
+                                <td><input type = "radio" name = "q7" value = "q7n" checked></td>
+                            </tr>
+                        </table>
+                        <input type = "submit" value = "제출">
+                        <input type = "reset" value = "다시하기">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <aside></aside>
+        <nav>
+            <div class = "stickynav">
+                <div class = "stickynav-head">
+                    퀵 메뉴
+                </div>
+                <div class = "stickynav-body">
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCPU.html';">CPU</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptVGA.html';">그래픽카드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptRAM.html';">RAM (램)</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptMBD.html';">메인보드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptPSU.html';">파워</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptSTR.html';">저장장치</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCLC.html';">CPU 쿨러</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCAS.html';">케이스</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptREC.html';">추천견적</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'compututorial.html';">메인화면</div>
+                </div>
+            </div>
+        </nav>
+        <footer>
+        </br><small>홍익대학교 게임소프트웨어학과 B877014 박형근 제작</small>
+        </footer>
+    </body>
+</html>

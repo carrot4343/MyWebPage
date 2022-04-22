@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8"/>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css">
+        <title>
+            케이스 튜토리얼
+        </title>
+        <style type = "text/css">
+            @font-face
+            {
+                font-family:"jua";
+                src: url("./fonts/BMJUA_ttf.ttf");
+            }
+    
+            @font-face
+            {
+                font-family:"jalnan";
+                src: url("./fonts/Jalnan.ttf");
+            }
+            p
+            {
+                font-family:"jalnan";
+                font-size: 23px;
+            }
+            @font-face
+            {
+                font-family:"godoM";
+                src: url("./fonts/GodoM.ttf")
+            }
+            .accordion-header
+            {
+                font-family:"godoM";
+            }
+            .stickynav
+            {
+                font-family:"jalnan";
+                font-size: 20px;
+            }
+        </style>
+        <style>
+             section
+            {
+                background-color: white; 
+                position: absolute; left: 650px; width: 1242px; height: 1200px; 
+                border-style: solid; border-width: thin; box-shadow: 10px 10px 5px gray; padding: 20px;
+                z-index: 1; overflow-y: scroll; top: 0;
+            } 
+            aside
+            {
+                background-color: lightgray; 
+                position: absolute; width: 650px; height: 1200px; left:0; top:0;
+                z-index: 0;
+            }
+            nav
+            {
+                background-color: lightgray; 
+                position: absolute; left: 1892px; width: 668px; height: 1200px; top: 0;
+                z-index: 0;
+            }
+            footer
+            {
+                background-color: lightgray; 
+                position: absolute; top: 1200px; width: 2560px; height: 97px; left: 0; padding: 15px;
+                z-index: 0;
+                text-align: center;
+            }
+            .detail
+            {
+                width: 25%; height: 300px; float: left;  margin: 3.9%;
+               text-align: center; 
+                border-style: solid; border-width: medium; border-radius: 50px;
+            }
+            .detail-image
+            {
+               margin-top: 20px; margin-bottom: 20px;
+            }
+            .stickynav
+            {
+                text-align: center;
+            }
+            .stickynav-head
+            {
+                z-index: 1; position: absolute; width: 150px; height: 60px;
+                top: 260px; left: 100px;
+                padding: 15px;
+            }
+            .stickynav-body
+            {
+                z-index: 1; position: absolute; width: 150px; height: 554px; background-color: white; 
+                border-style: solid; border-width: medium; border-radius: 10px;
+                top: 320px; left: 100px;
+            }
+            .stickynav-body-detail
+            {
+                width: 116px; height: 40px; margin: 15px;
+                border-bottom: solid; border-width: 1px;
+            }
+            .stickynav-body-detail:hover
+            {
+                font-size: 23px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="detail"><img src = "cptCAS.png" alt = "케이스 설명" width = 200px height = 200px><p>케이스</p></div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            제품 설명에서 보아야 하는 것들
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img src = "cptCAS1.png" alt = "케이스 스펙시트" width = 70%></br>
+                            <img src = "cptCAS2.png" alt = "케이스 스펙시트" width = 70%></br>
+                            <a href = "http://prod.danawa.com/info/?pcode=11884207&keyword=dlx21&cate=112775">출처 : 다나와 닷컴 DLX21 제품 상세설명</a></br></br>
+                            다른 컴퓨터 부품 항목과는 다르게 케이스는 별도의 강조를 하지 않았습니다. 이는 이유가 있는데, 케이스는 왠만하면 거의 다 보아야 합니다. 그러면 맨 위부터 차근차근 훑으면서 내려가보겠습니다.</br></br>
+                            케이스 크기 : 일반적으로 미니타워, 미들타워, 빅타워 3종류를 사용하며 케이스의 크기를 가장 직관적으로 나타내는 지표입니다. 주로 호환되는 메인보드의 크기에 영향을 받습니다.</br></br>
+                            m-ATX보드는 미니타워, 미들타워, 빅타워에서 사용이 가능하고 ATX메인보드는 미들타워 ,빅타워에서 사용이 가능하며 E-ATX보드는 일부 미들타워, 빅타워에서 사용이 가능합니다.</br></br>
+                            지원파워규격 : 장착할 수 있는 파워의 규격을 나타냅니다. 일반적으로 ATX파워를 사용합니다.</br></br>
+                            지원보드규격 : 여기서 본인이 사용할 보드의 크기가 호환되는지에 대한 여부를 확인하면 됩니다.</br></br>
+                            내부 확장 : 8.9cm(3.5인치)베이는 하드디스크를 장착할 수 있는 공간입니다. 6.4cm(2.5인치)베이는 SATA3방식의 SSD를 장착 할 수 있는 공간입니다. PCI슬롯은 일반적으로 그래픽카드를 장착할 때 사용합니다. 최신 그래픽카드는 2개의 슬롯을 사용합니다.</br></br>
+                            수직 PCI슬롯은 라이저카드 등을 이용하여 그래픽카드를 세로로 꽂았을 때에 그래픽카드 포트가 원만하게 노출되는 슬롯을 의미합니다.</br></br>
+                            쿨링팬 : 기본으로 제공되는 케이스에 장착된 쿨러를 의미합니다.</br></br>
+                            측면 : 케이스의 측면이 철판인지 아크릴인지 강화유리인지를 의미합니다. 각각의 장단점이 있습니다. 아크릴같은 경우에는 가볍지만 스크래치가 잘 나는 단점이 있습니다. 강화유리는 빛 투과성이 높고 스크래치에 강하지만 무겁고 부서질수 있다는 단점이 있습니다.</br></br>
+                            LED팬 : 기본 제공되는 쿨링팬 중에 몇개가 팬에 LED가 탑재된 것인지를 의미합니다.</br></br>
+                            후면, 전면, 상단, 하단, 내부상단, 내부측면 : 기본 탑재된 케이스 쿨링 팬이 어느 곳에 몇개 장착되어있는지를 의미합니다.</br></br>
+                            외부 포트 : 케이스 자체에 달려있어 메인보드에 연결하여 사용 할 수 있는 포트를 의미합니다. 케이스에 포트가 존재하지 않더라도 메인보드에 직접 케이블을 연결하여 사용할 수 있습니다.</br></br>
+                            크기 : 케이스 전체의 크기를 의미합니다.</br></br>
+                            파워 장착 : 파워 서플라이에서 '깊이'를 의미합니다.</br></br>
+                            GPU 장착 : 케이스에 그래픽카드가 장착될 수 있는 공간을 의미합니다. 일부 케이스는 전면의 팬을 해체하면 장착할 수 있는 공간이 늘어나기도 합니다.</br></br>
+                            CPU 장착 : 쿨러의 '높이'를 의미합니다. 단, 5mm 이상의 차이가 있어야 성능상의 불이익을 받지 않습니다.</br></br>
+                            수냉쿨러 규격 : 몇 열의 수냉쿨러가 장착이 가능한지에 대한 여부입니다.</br></br>
+                            라디에이터(상단,전면,후면) : 수냉쿨러 규격의 연장선입니다. 케이스 상단에 몇 mm 의 라디에이터가 장착 가능한지에 대한 지표입니다.</br></br>
+                            LED튜닝 : 케이스에 기본적으로 적용되어있는 LED튜닝을 의미합니다.</br></br>
+                            컨트롤러 지원 : 팬, RGB 컨트롤은 케이스에서 메인보드에서 모자란 PWM팬 컨트롤 포트나 RGB전용 팬 포트를 제공해주는지에 대한 여부입니다.</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            케이스 구매 시 당부 드리는 말
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            다른 PC구성품들과는 다르게 케이스만큼은 성능, 소음 등을 제껴두고 오로지 '감성' 즉 외형을 보았을 때 마음에 드는 제품을 선택하는 것이 좋습니다.</br></br>
+                            만약 본인이 딱히 마음에 드는게 없거나 마음에 드는것이 여러개가 있는데 그 중 에서 선택하기 힘든 경우에 케이스의 강판 두께라던가 기본 팬 소음 등의 성능을 따져보는것이 좋습니다.</br></br>
+                            물론 조립 편의성이나 강판 두께 먼지필터 여부 등이 포함되어있으면 사용자의 입장에서는 편하고 좋습니다. 다만 그런 스펙의 경우라도 외형이 마음에 안든다면 결국엔 후회하는 경우를 매우 많이 보았습니다.</br></br>
+                            따라서 여러분들의 취향을 최우선으로 하시길 당부드립니다.</br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>>
+
+        <aside></aside>
+
+        <nav>
+            <div class = "stickynav">
+                <div class = "stickynav-head">
+                    퀵 메뉴
+                </div>
+                <div class = "stickynav-body">
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCPU.html';">CPU</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptVGA.html';">그래픽카드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptRAM.html';">RAM (램)</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptMBD.html';">메인보드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptPSU.html';">파워</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptSTR.html';">저장장치</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCLC.html';">CPU 쿨러</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCAS.html';">케이스</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptREC.html';">추천견적</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'compututorial.html';">메인화면</div>
+                </div>
+            </div>
+        </nav>
+
+        <footer>
+            </br>
+            <small>홍익대학교 게임소프트웨어학과 B877014 박형근 제작</small>
+        </footer>
+    </body>
+</html>

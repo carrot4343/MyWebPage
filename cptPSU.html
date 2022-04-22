@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8"/>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css">
+        <title>
+            파워 서플라이 튜토리얼
+        </title>
+        <style type = "text/css">
+            @font-face
+            {
+                font-family:"jua";
+                src: url("./fonts/BMJUA_ttf.ttf");
+            }
+    
+            @font-face
+            {
+                font-family:"jalnan";
+                src: url("./fonts/Jalnan.ttf");
+            }
+            p
+            {
+                font-family:"jalnan";
+                font-size: 23px;
+            }
+            @font-face
+            {
+                font-family:"godoM";
+                src: url("./fonts/GodoM.ttf")
+            }
+            .accordion-header
+            {
+                font-family:"godoM";
+            }
+            .stickynav
+            {
+                font-family:"jalnan";
+                font-size: 20px;
+            }
+        </style>
+        <style>
+            section
+            {
+                background-color: white; 
+                position: absolute; left: 650px; width: 1242px; height: 1200px; 
+                border-style: solid; border-width: thin; box-shadow: 10px 10px 5px gray; padding: 20px;
+                z-index: 1; overflow-y: scroll; top: 0;
+            } 
+            aside
+            {
+                background-color: lightgray; 
+                position: absolute; width: 650px; height: 1200px; left:0; top:0;
+                z-index: 0;
+            }
+            nav
+            {
+                background-color: lightgray; 
+                position: absolute; left: 1892px; width: 668px; height: 1200px; top: 0;
+                z-index: 0;
+            }
+            footer
+            {
+                background-color: lightgray; 
+                position: absolute; top: 1200px; width: 2560px; height: 97px; left: 0; padding: 15px;
+                z-index: 0;
+                text-align: center;
+            }
+            .detail
+            {
+                width: 25%; height: 300px; float: left;  margin: 3.9%;
+               text-align: center; 
+                border-style: solid; border-width: medium; border-radius: 50px;
+            }
+            .detail-image
+            {
+               margin-top: 20px; margin-bottom: 20px;
+            }
+            .stickynav
+            {
+                text-align: center;
+            }
+            .stickynav-head
+            {
+                z-index: 1; position: absolute; width: 150px; height: 60px;
+                top: 260px; left: 100px;
+                padding: 15px;
+            }
+            .stickynav-body
+            {
+                z-index: 1; position: absolute; width: 150px; height: 554px; background-color: white; 
+                border-style: solid; border-width: medium; border-radius: 10px;
+                top: 320px; left: 100px;
+            }
+            .stickynav-body-detail
+            {
+                width: 116px; height: 40px; margin: 15px;
+                border-bottom: solid; border-width: 1px;
+            }
+            .stickynav-body-detail:hover
+            {
+                font-size: 23px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="detail"><img src = "cptPSU.png" alt = "파워 서플라이 설명입니다." width = 200px height = 200px><p>파워 서플라이</p></div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            파워 서플라이의 사전적 정의 및 컴퓨터에서의 역할
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            외부에서 들어오는 전류를 필요에 맞게 변환해서 컴퓨터에 전원을 공급해주는 장비입니다. 이름이 전원공급장치인 만큼 전기 공극븡 책임지는 중요한 부품으로 일반적으로 인체의 '심장'에 비유되곤 합니다.</br></br>
+                            상식 선에서 생각해보았을 때 왜 좋은 파워를 사용해야 하는지 이해가 힘들 수 있습니다. 만약 안좋은 파워를 사용하게 될 경우 출렁이는 전압 때문에 블루스크린이 발생하는 경우가 있기도 하며, 극단적인 예시로는 파워가 고장이 나면서</br></br>
+                            메인보드에 과전류가 흘러들어가게되어 메인보드도 고장나는 상황또한 발생합니다.</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            파워 서플라이 이름의 의미
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            마이크로닉스 Classic II 500W 80PLUS를 예시로 설명하겠습니다.</br></br>
+                            마이크로닉스 : 제조 회사의 이름입니다.</br></br>
+                            Classic II : 해당 회사의 제품군 이름입니다. 제품군 별로 어떤 제품군이 더 좋다더라 하는 이미지가 존재합니다.</br></br>
+                            500W : 파워의 정격 출력을 의미합니다.</br></br>
+                            80PLUS : 공신력 있는 기관에서 평가한 효율성 지표로 파워 서플라이의 효율이 80% 이상일 경우 붙여지는 공식 인증 마크입니다. 성능을 평가할 때 주로 사용되는 지표입니다.</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            제품 설명에서 보아야 하는 것들
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img src = "cptPSU1.png" alt = "파워 서플라이 스펙시트" width = 80%></br>
+                            <a href = "http://prod.danawa.com/info/?pcode=1928673&keyword=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EB%8B%89%EC%8A%A4%20%ED%81%B4%EB%9E%98%EC%8B%9D2&cate=112777#bookmark_product_information">출처 : 다나와 닷컴 마이크로닉스 Classic II 500W 제품 상세설명</a></br></br>
+                            제조회사 : 파워는 생각보다 브랜드에 의미가 상당한 편입니다. 물론 실제 차이보다 이미지에 있어서의 차이가 더 큽니다. 이런 상황이 된 이유는, 우선 파워는 일반적으로 '안정성'과 A/S를 최우선으로 합니다. 이는 신뢰에 기반한 지표로써 브랜드 이미지에 상당한 영향을 받습니다.</br></br>
+                            따라서 본인이 구매하려는 파워의 브랜드를 검색하였을때 A/S나 안정성에서 이슈가 있다면 다른 제품을 선택하는 것이 좋습니다.</br></br>
+                            제품 분류 : 파워의 규격을 의미합니다. 일반 PC의 경우 ATX를 사용합니다.</br></br>
+                            80PLUS 인증 : 공신력 있는 기관에서 평가한 효율성 지표입니다. Standard, Bronze, Silver, Gold, Platinum, Titanum 등급이 존재하며 Titanum 등급이 가장 좋은 등급입니다. 파워에 특정 수준에 부하를 주었을 때 측정되는 효율로 등급을 결정하게 되며, 80Plus Stadard 이상의 파워가 권장됩니다.</br></br>
+                            정격출력 : 파워의 출력용량을 의미합니다. 각 PC부품마다 요구하는 전력량이 존재하는데, 각각의 요구 전력량의 합이 파워의 정격출력보다 낮아야 합니다. 일반적으로 그래픽카드 제조사에서 권장한 출력량이 적합합니다.</br></br>
+                            깊이 : 파워의 물리적인 크기를 나타내는 지표 중 하나입니다. PC케이스의 공간과 연동하여 생각하면 됩니다.</br></br>
+                            A/S보증기간 : 파워의 경우 고장 또는 용량이 부족한 경우를 제외하고는 일반적으로 잘 교체하는 일이 없어서 교체 주기가 PC부품중에서 매우 긴 편입니다. 따라서 이용하려는 PC를 오래 사용할 계획이라면 파워의 A/S기간이 긴 제품을 사용하는 것이 좋습니다.</br></br>
+                            케이블연결 : 케이블일체형, 세미 모듈러, 풀 모듈러가 존재합니다. 케이블 일체형은 각 부품으로 연결할 케이블이 파워에 기본적으로 장착되어있는 제품입니다.</br></br>
+                            세미 모듈러는 일부만 장착되어있고 나머지 케이블은 따로 제품 패키지에 동봉되어 연결 여부를 사용자가 편의에 맞게 선택할 수 있습니다.</br></br>
+                            풀 모듈러는 모든 케이블이 따로 제품 패키지에 동봉되어 있는 제품입니다.</br></br>
+                            풀 모듈러에 가까운 제품일수록 컴퓨터 조립 편의성이 높아지고 케이스 내부 케이블 정리를 더 깔끔하게 할 수 있습니다. 단, 가격이 더 비싸다는 단점이 있습니다.</br></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>>
+
+        <aside></aside>
+
+        <nav>
+            <div class = "stickynav">
+                <div class = "stickynav-head">
+                    퀵 메뉴
+                </div>
+                <div class = "stickynav-body">
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCPU.html';">CPU</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptVGA.html';">그래픽카드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptRAM.html';">RAM (램)</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptMBD.html';">메인보드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptPSU.html';">파워</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptSTR.html';">저장장치</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCLC.html';">CPU 쿨러</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCAS.html';">케이스</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptREC.html';">추천견적</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'compututorial.html';">메인화면</div>
+                </div>
+            </div>
+        </nav>
+
+        <footer>
+        </br><small>홍익대학교 게임소프트웨어학과 B877014 박형근 제작</small>
+        </footer>
+    </body>
+</html>

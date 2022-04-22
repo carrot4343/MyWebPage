@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8"/>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css">
+        <title>
+            RAM 튜토리얼
+        </title>
+        <style type = "text/css">
+            @font-face
+            {
+                font-family:"jua";
+                src: url("./fonts/BMJUA_ttf.ttf");
+            }
+    
+            @font-face
+            {
+                font-family:"jalnan";
+                src: url("./fonts/Jalnan.ttf");
+            }
+            p
+            {
+                font-family:"jalnan";
+                font-size: 23px;
+            }
+            @font-face
+            {
+                font-family:"godoM";
+                src: url("./fonts/GodoM.ttf")
+            }
+            .accordion-header
+            {
+                font-family:"godoM";
+            }
+            .stickynav
+            {
+                font-family:"jalnan";
+                font-size: 20px;
+            }
+        </style>
+        <style>
+            section
+            {
+                background-color: white; 
+                position: absolute; left: 650px; width: 1242px; height: 1200px; 
+                border-style: solid; border-width: thin; box-shadow: 10px 10px 5px gray; padding: 20px;
+                z-index: 1; overflow-y: scroll; top: 0;
+            } 
+            aside
+            {
+                background-color: lightgray; 
+                position: absolute; width: 650px; height: 1200px; left:0; top:0;
+                z-index: 0;
+            }
+            nav
+            {
+                background-color: lightgray; 
+                position: absolute; left: 1892px; width: 668px; height: 1200px; top: 0;
+                z-index: 0;
+            }
+            footer
+            {
+                background-color: lightgray; 
+                position: absolute; top: 1200px; width: 2560px; height: 97px; left: 0; padding: 15px;
+                z-index: 0;
+                text-align: center;
+            }
+            .detail
+            {
+                width: 25%; height: 300px; float: left;  margin: 3.9%;
+               text-align: center; 
+                border-style: solid; border-width: medium; border-radius: 50px;
+            }
+            .detail-image
+            {
+               margin-top: 20px; margin-bottom: 20px;
+            }
+            .stickynav
+            {
+                text-align: center;
+            }
+            .stickynav-head
+            {
+                z-index: 1; position: absolute; width: 150px; height: 60px;
+                top: 260px; left: 100px;
+                padding: 15px;
+            }
+            .stickynav-body
+            {
+                z-index: 1; position: absolute; width: 150px; height: 554px; background-color: white; 
+                border-style: solid; border-width: medium; border-radius: 10px;
+                top: 320px; left: 100px;
+            }
+            .stickynav-body-detail
+            {
+                width: 116px; height: 40px; margin: 15px;
+                border-bottom: solid; border-width: 1px;
+            }
+            .stickynav-body-detail:hover
+            {
+                font-size: 23px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="detail"><img src = "cptRAM.png" alt = RAM width = 200px height = 200px><p>램</p></div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            램의 사전적 정의 및 컴퓨터에서의 역할
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            RAM(Random Access Memory)은 사용자가 자유롭게 내용을 읽고 쓰고 지울 수 있는 기억장치입니다. '주 기억장치'로 분류되며 보통 램이 많으면 한번에 많은 일을 할 수 있기에 '책상'으로 비유되곤 합니다.</br></br>
+                            램은 임의의 영역에 접근하여 읽고 쓰기가 가능하며 반도체 회로로 구성되어 있는 '휘발성 메모리'입니다. 또한 우리가 알아볼, 혹은 살 램은 DRAM(Dynamic Random Access Memory)이 정확한 명칭입니다.</br></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            램 이름의 의미
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            우리가 사용하는 램은 크게 2종류로 나눌 수 있습니다. 튜닝램과 일반램 입니다. 튜닝램은 일반 램 중에서도 수율이 좋은 램을 선정하여 오버클럭을 하거나 방열판을 붙이는 등 '튜닝'과정을 거친 램을 의미합니다.</br></br>
+                            튜닝램 중 하나를 예시로 들어 설명하겠습니다.</br></br>
+                            G.SKILL DDR4 - 3200 CL14 TRIDENT Z RGB 패키지 (16GB(8GX2))</br></br>
+                            G.SKILL : 램을 튜닝한 회사의 이름입니다. 각 회사마다 사용하는 램의 회사도 다르고 방열판의 재질 등 여러 차이가 있습니다.</br></br>
+                            DDR4 : 램은 기술적인 발전을 통하여 세대를 교체하곤 했고, 교체할 때에는 메인보드에 장착되는 규격 또한 바뀌곤 했습니다. 단순하게 성능과 규격을 나타내는 사항이라 볼 수 있습니다.</br></br>
+                            3200 : 램의 동작 클럭을 의미합니다. 일반적으로 XMP기술이 적용되어 저장된 동작 클럭을 의미합니다. 간혹 25600 등으로 표기된 것이 있는데 이는 동작 대역폭을 의미하며 클럭수 X 8 과 동일합니다.</br></br>
+                            CL14 : 램 타이밍을 의미합니다. 복잡한 설명 없이 낮을수록 더 높은 성능을 의미합니다.</br></br>
+                            TRIDENT Z RGB 패키지 : 각 회사별 제품 패키지 이름입니다.</br></br>
+                            16GB(8GX2) : 판매하는 램 패키지의 용량을 의미합니다. 패키지에 다수의 램이 포함된 경우 어떤 용량의 램이 몇개가 있는지 표기됩니다.</br></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            제품설명에서 보아야 하는 것들
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img src = "cptRAM1.png" alt = "RAM 스펙시트" width = 80%></br>
+                            <a href = "http://prod.danawa.com/info/?pcode=4905041&keyword=3200cl14&cate=112752#bookmark_product_information">출처 : 다나와 닷컴 G.SKILL튜닝램 제품 상세설명</a></br></br>
+                            빨간 사각형 부분을 보겠습니다. </br></br>
+                            패키지 : 패키지 안에 몇개의 램이 있는지에 대한 설명입니다.</br></br>
+                            제품 분류 : 어떤 규격을 사용한 램인지에 대한 설명입니다. 메인보드에서 램의 규격을 지원하지 않으면 장착되지 않습니다.</br></br>
+                            메모리 용량 : 패키지의 메모리 합이 몇 GB인지에 대한 설명입니다.</br></br>
+                            동작클럭(대역폭) : 램의 클럭 즉, 속도를 의미합니다. 일반적으로 높을수록 더 좋은 성능을 갖고있지만 램 타이밍과 함께 비교해야 정확한 비교가 가능합니다.</br></br>
+                            동작전압 : 기본(default) 설정된 전압을 의미합니다. BIOS설정에서 변경 할 수 있습니다.</br></br>
+                            램 타이밍 : 동일 클럭일 경우 낮은 램 타이밍이 더 높은 성능을 의미합니다. </br></br>
+                            방열판 색상 : 튜닝램의 경우 장착된 방열판의 색을 의미합니다.</br></br>
+                            LED 색상 : 방열판에 장착된 LED라이트가 어떤 색을 내는지 의미합니다.</br></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            램 용량 구매 요령
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            램은 반드시 2개 이상의 램을 사용하는 것이 좋습니다. 예를들어, 8GB 램 하나를 사용하는 것 보다 4GB 램 2개를 사용하는 것이 더 높은 성능을 발휘하며 가격도 별로 차이가 나지 않습니다.</br></br>
+                            4GB : 사무용 컴퓨터로써의 최소한의 용량입니다. 웹서핑, 유튜브, 저사양 게임 등을 이용 할 수 있지만 권장되지 않습니다.</br></br>
+                            8GB : 어느정도 다수의 프로그램이나 여러개의 웹 창을 이용하여도 큰 부담이 되지 않는 용량입니다. 요즘 나오는 게임의 최소 권장 용량이기도 합니다. UHD 모니터를 사용한다면 권장되지 않습니다. 사무용 컴퓨터에 적합합니다.</br></br>
+                            16GB : 2020 년 이후 출시된 일부 고사양 게임을 제외하고는 거의 모든 게임에서 램 용량에 구애받지 않는 용량입니다. UHD모니터를 사용한다면 16GB이상의 램을 권장합니다. 또한, 음악 작곡을 위해서는 16GB이상을 권장합니다.</br></br>
+                            32GB : 4K 60FPS 영상 편집에 요구되는 최소 용량입니다. 16GB에 적합한 게임을 즐기면서도 다양한 프로그램을 사용하려는 분들이 많이 선택하는 용량입니다. 대표적으로 하나의 컴퓨터로 게임 및 방송 송출을 하는 원컴방송이 있습니다. 
+                            시티즈 스카이라인, 코이카츠 등 램 용량을 많이 사용하는 프로그램의 권장 사양이기도 합니다. </br></br>
+                            64GB : 4K 해상도의 영상편집이나 3D 작업시 권장되는 용량입니다. 원컴 방송으로 여러 플랫폼에 동시 송출을 원하는 경우에도 사용합니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside></aside>
+
+        <nav>
+            <div class = "stickynav">
+                <div class = "stickynav-head">
+                    퀵 메뉴
+                </div>
+                <div class = "stickynav-body">
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCPU.html';">CPU</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptVGA.html';">그래픽카드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptRAM.html';">RAM (램)</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptMBD.html';">메인보드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptPSU.html';">파워</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptSTR.html';">저장장치</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCLC.html';">CPU 쿨러</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCAS.html';">케이스</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptREC.html';">추천견적</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'compututorial.html';">메인화면</div>
+                </div>
+            </div>
+        </nav>
+
+        <footer>
+        </br><small>홍익대학교 게임소프트웨어학과 B877014 박형근 제작</small>
+        </footer>
+    </body>
+</html>

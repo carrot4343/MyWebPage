@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8"/>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css">
+        <title>
+            메인보드 튜토리얼
+        </title>
+        <style type = "text/css">
+            @font-face
+            {
+                font-family:"jua";
+                src: url("./fonts/BMJUA_ttf.ttf");
+            }
+    
+            @font-face
+            {
+                font-family:"jalnan";
+                src: url("./fonts/Jalnan.ttf");
+            }
+            p
+            {
+                font-family:"jalnan";
+                font-size: 23px;
+            }
+            @font-face
+            {
+                font-family:"godoM";
+                src: url("./fonts/GodoM.ttf")
+            }
+            .accordion-header
+            {
+                font-family:"godoM";
+            }
+            .stickynav
+            {
+                font-family:"jalnan";
+                font-size: 20px;
+            }
+        </style>
+        <style>
+            section
+            {
+                background-color: white; 
+                position: absolute; left: 650px; width: 1242px; height: 1200px; 
+                border-style: solid; border-width: thin; box-shadow: 10px 10px 5px gray; padding: 20px;
+                z-index: 1; overflow-y: scroll; top: 0;
+            } 
+            aside
+            {
+                background-color: lightgray; 
+                position: absolute; width: 650px; height: 1200px; left:0; top:0;
+                z-index: 0;
+            }
+            nav
+            {
+                background-color: lightgray; 
+                position: absolute; left: 1892px; width: 668px; height: 1200px; top: 0;
+                z-index: 0;
+            }
+            footer
+            {
+                background-color: lightgray; 
+                position: absolute; top: 1200px; width: 2560px; height: 97px; left: 0; padding: 15px;
+                z-index: 0;
+                text-align: center;
+            }
+            .detail
+            {
+                width: 25%; height: 300px; float: left;  margin: 3.9%;
+               text-align: center; 
+                border-style: solid; border-width: medium; border-radius: 50px;
+            }
+            .detail-image
+            {
+               margin-top: 20px; margin-bottom: 20px;
+            }
+            .stickynav
+            {
+                text-align: center;
+            }
+            .stickynav-head
+            {
+                z-index: 1; position: absolute; width: 150px; height: 60px;
+                top: 260px; left: 100px;
+                padding: 15px;
+            }
+            .stickynav-body
+            {
+                z-index: 1; position: absolute; width: 150px; height: 554px; background-color: white; 
+                border-style: solid; border-width: medium; border-radius: 10px;
+                top: 320px; left: 100px;
+            }
+            .stickynav-body-detail
+            {
+                width: 116px; height: 40px; margin: 15px;
+                border-bottom: solid; border-width: 1px;
+            }
+            .stickynav-body-detail:hover
+            {
+                font-size: 23px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="detail"><img src = "cptMBD.jpg" alt = "메인보드 설명입니다" height = 200px width = 200px><p>메인보드</p></div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            메인보드의 사전적 정의 및 컴퓨터에서의 역할
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            각종 케이블이나 배선을 통합하여 연결하는 회로와 입출력 포트가 설치되어 있는 전자기판 입니다. CPU나 램과같은 시스템이 작동되기 위한 주요 부품 장착과 주변 장치를 연결 할 수 있는 인터페이스를 제공하는 인쇄회로기판(PCB)을 의미합니다.</br></br>
+                            마더보드, 시스템 보드, 로직 보드 등의 다른 이름이 있습니다.</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            메인보드 이름의 의미
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            MSI Z490-A PRO 를 예시로 들어 설명하겠습니다.</br></br>
+                            MSI : 제조회사 이름입니다. 각 회사별로 어느정도 특징이 존재합니다.</br></br>
+                            Z490 : 칩셋의 이름입니다. CPU와의 호환 여부를 판단 할 수 있으며 '체급'을 구분할 수 있는 지표입니다.</br></br>
+                            -A PRO : 각 회사별 패키지 이름입니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            제품 설명에서 보아야 하는 것들
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img src = "cptMBD1.png" alt = "메인보드 스펙시트1" width = 70%>
+                            <img src = "cptMBD2.png" alt = "메인보드 스펙시트2" width = 70%></br>
+                            <a href = "http://prod.danawa.com/info/?pcode=11223594&keyword=z490&cate=112751#bookmark_product_information">출처 : 다나와 닷컴 MSI MPG Z490 게이밍 엣지 WiFi 제품 상세정보</a></br></br>
+                            보기만해도 어질어질할만큼 보아야 하는 것들이 많습니다. 단, 메인보드는 대부분의 경우 메인보드를 100% 활용하는 것이 아닌 개인의 용도와 목적에 따라 일부만을 사용하게 됩니다. 따라서 공통적으로 보아야 할 부분과 특정 상황에만 보아야 하는 부분을 알아보겠습니다.</br></br>
+                            우선 기본 사양 부분입니다.</br></br>
+                            제품 분류 : 인텔 CPU전용인지 AMD CPU전용인지에 대한 여부입니다. 매우 중요한 부분이며 반약 이 부분을 혼동하여 잘 못 구매할 시 환불이나 교환 정책을 통해 다른 제품을 구매해야 합니다.</br></br>
+                            CPU 소켓 : 본인이 사용할 CPU의 소켓과의 호환성 여부입니다. 특히 Intel CPU의 경우 매 세대마다 소켓을 변경하는 것으로 유명합니다. 쉽게 비교하기 위해 예시를 들겠습니다.</br></br>
+                            <img src = "cptMBD3.png" alt = "예시1" width = 40%></br>
+                            <a href = "http://prod.danawa.com/info/?pcode=5529981&keyword=8700k&cate=113973#bookmark_product_information">출처 : Intel i7-8700k 제품 상세설명</a></br></br>
+                            Intel i7-8700k 스펙시트 중 일부입니다. 소켓 구분에 인텔(소켓1151v2)라고 적힌 부분을 기억합니다.</br></br>
+                            <img src = "cptMBD4.png" alt = "예시2" width = 40%></br>
+                            <a href = "http://prod.danawa.com/info/?pcode=6346757&keyword=h310&cate=112751#bookmark_product_information">출처 : ASUS PRIME H310M-A 제품 상세설명</a></br></br>
+                            H310 메인보드 스펙시트 중 일부입니다. 마찬가지로 소켓에 인텔(소켓1151v2)라고 적혀있습니다.</br></br>
+                            이와 같이 메인보드와 CPU의 소켓이 일치해야 장착하여 사용할 수 있습니다.</br></br>
+                            폼팩터 : 메인보드의 크기 규격입니다. 여러 종류가 있지만 일반 사용자 선에서는 ITX, m-ATX, ATX, E-ATX가 있습니다. 언급한 순서대로 크기가 급니다.</br></br>
+                            전원부 : CPU의 발열을 감당하는 부분입니다. 페이즈 수가 많을수록 높습니다.</br></br>
+                            이제 공통적으로 보는 사항이 아닌 일부 상황에서만 사용하는 부분에 대해 설명하겠습니다.</br></br>
+                            1. 램을 3개 이상 구매할 의향이거나 램 오버클럭 기능을 사용할 예정이다.</br></br>
+                            메모리 속도 및 메모리 슬롯을 확인해야 합니다.</br></br>
+                            2. 현재 사용하는 램을 계속 쓸 의향이며 그 램의 규격이 DDR3입니다.</br></br>
+                            메모리 종류를 확인해야 합니다. 규격이 다르다면 램이 장착되지 않습니다.</br></br>
+                            3. 내장 그래픽카드를 사용할 예정입니다.</br></br>
+                            그래픽 출력 부분을 확인해야 합니다. Nvidia 또는 AMD 에서 제작한 외장 그래픽카드를 사용하는 경우 모니터의 케이블을 그래픽카드에 직접 꽂아서 사용하는 반면, 내장 그래픽카드를 사용하는 경우에는 메인보드에 직접 꽂아서 사용합니다.</br></br>
+                            그래서 본인이 사용하는 모니터의 케이블이 DP 포트를 사용하는지 HDMI 포트를 사용하는지를 알아야 할 필요가 있으며 해당 포트가 존재하는 메인보드를 구매해야 합니다.</br></br>
+                            4. m.2 규격의 SSD를 사용할 예정이거나 SSD, HDD를 2개 이상 사용할 예정입니다.</br></br>
+                            전자의 경우 m.2 슬롯의 갯수를 확인하여야 하며 후자의 경우에는 SATA3 슬롯의 개수를 확인하여야 합니다. 일부 보드는 m.2슬롯이 존재하지 않는 경우가 꽤 있습니다.</br></br>
+                            5. 썬더볼트 등의 특수 포트가 필요합니다.</br></br>
+                            후면 단자 부분을 참고하면 됩니다.</br></br>
+                            6. Wi-Fi를 컴퓨터에서도 사용하고 싶거나 블루투스를 사용하고 싶습니다. 혹은 1기가 이상의 속도를 내는 인터넷을 사용중입니다.</br></br>
+                            LAN구성을 참고하면 됩니다. 보통 Wi-Fi를 사용하기를 희망하는 경우 보드 이름에 Wi-Fi가 기재되어있는 경우가 많습니다.</br></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside></aside>
+        <nav>
+            <div class = "stickynav">
+                <div class = "stickynav-head">
+                    퀵 메뉴
+                </div>
+                <div class = "stickynav-body">
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCPU.html';">CPU</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptVGA.html';">그래픽카드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptRAM.html';">RAM (램)</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptMBD.html';">메인보드</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptPSU.html';">파워</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptSTR.html';">저장장치</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCLC.html';">CPU 쿨러</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptCAS.html';">케이스</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'cptREC.html';">추천견적</div>
+                    <div class ="stickynav-body-detail" style=" cursor: pointer;" onclick="location.href= 'compututorial.html';">메인화면</div>
+                </div>
+            </div>
+        </nav>
+        <footer>
+        </br><small>홍익대학교 게임소프트웨어학과 B877014 박형근 제작</small>
+        </footer>
+    </body>
+</html>
